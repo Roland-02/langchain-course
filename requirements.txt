@@ -1,0 +1,13 @@
+dotenv
+langchain
+langchain-google-genai
+langchain-tavily
+langchain-ollama
+langchain-anthropic
+langchain-community
+langchain-core
+langchain-experimental
+langchain-huggingface
+langchain-openai
+langchain-ollama
+langchain-anthropic
