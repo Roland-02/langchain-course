@@ -6,6 +6,16 @@ from langchain_openai import ChatOpenAI
 from langchain_ollama import ChatOllama
 from langchain_tavily_search import TavilySearch
 
+
+from pydantic import BaseModel, Field
+from typing import List
+
+class SearchResult(BaseModel):
+    title: str = Field(description="The title of the search result")
+    url: str = Field(description="The URL of the search result")
+    snippet: str = Field(description="A short snippet of the search result")
+
+
 load_dotenv()
 
 @tool
